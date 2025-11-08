@@ -1,0 +1,110 @@
+:root {
+  /* ... (all your :root variables are unchanged) ... */
+  --font-family-base: 'Open Sans', system-ui, sans-serif;
+  --color-background: #242424;
+  --color-surface-1: #2a2a2a;
+  --color-surface-2: #333;
+  --color-border-1: #444;
+  --color-border-2: #555;
+  --color-text-primary: #eee;
+  --color-text-secondary: #ccc;
+  --color-text-muted: #999;
+  --color-primary-accent: #4a69bd;
+  --color-primary-accent-hover: #5e80d8;
+  --color-primary-accent-text: #ffffff;
+  --color-type-xrp: #3498db;
+  --color-type-iou: #9b59b6;
+  --color-warning: #f39c12;
+  --color-error: #e74c3c;
+  --color-success: #2ecc71;
+  --header-height: 50px;
+  --panel-width-left: 300px;
+  --panel-width-right: 350px;
+  --border-radius-base: 4px;
+
+  /* Global styles */
+  font-family: var(--font-family-base);
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: var(--color-text-primary);
+  background-color: var(--color-background);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+/* --- THE 3-COLUMN LAYOUT --- */
+.app-shell {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.header-bar {
+  flex-shrink: 0;
+  border-bottom: 1px solid var(--color-border-1);
+  padding: 0 1rem;
+  height: var(--header-height);
+  display: flex;
+  align-items: center;
+}
+
+/* This is the 3-column grid container */
+.main-content {
+  display: grid;
+  /* This line creates the 3 columns */
+  grid-template-columns: var(--panel-width-left) 1fr var(--panel-width-right); 
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+/* This rule makes all 3 columns fill the full height */
+.left-filter-panel,
+.visualisation-area,
+.details-drawer {
+  overflow-y: auto;
+  height: calc(100vh - var(--header-height)); 
+  box-sizing: border-box;
+}
+
+/* Column 1 */
+.left-filter-panel {
+  padding: 1rem;
+  border-right: 1px solid var(--color-border-1);
+}
+
+/* Column 2 (Center) */
+.visualisation-area {
+  padding: 0; 
+  display: flex;
+  flex-direction: column; 
+}
+
+/* Column 3 (Right) */
+.details-drawer {
+  padding: 1rem;
+  border-left: 1px solid var(--color-border-1);
+}
+
+/* Placeholder styles (unchanged) */
+.placeholder {
+  border: 2px dashed var(--color-border-2);
+  padding: 1rem;
+  border-radius: var(--border-radius-base);
+  background: var(--color-surface-1);
+  height: 100%;
+  box-sizing: border-box;
+}
+.placeholder h3 {
+  margin-top: 0;
+  color: var(--color-text-muted);
+}

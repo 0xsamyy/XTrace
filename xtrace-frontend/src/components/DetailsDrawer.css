@@ -1,0 +1,68 @@
+.details-drawer {
+  /* Parent padding is set in App.css */
+}
+
+.drawer-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.drawer-content h4 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.close-button {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: var(--color-text-muted);
+  cursor: pointer;
+}
+.close-button:hover {
+  color: var(--color-text-primary);
+}
+
+.drawer-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  border-bottom: 1px solid var(--color-border-1);
+  padding-bottom: 0.75rem;
+}
+.drawer-section label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+}
+.drawer-section p {
+  margin: 0;
+  font-size: 1rem;
+}
+.drawer-section p.address-p {
+  font-family: monospace;
+  font-size: 0.9rem;
+  word-break: break-all; /* Wrap long addresses */
+}
+
+/* Steal button styles from LeftFilterPanel.css */
+.button-primary {
+  width: 100%;
+  padding: 0.6rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: var(--border-radius-base);
+  cursor: pointer;
+  border: none;
+  background: var(--color-primary-accent);
+  color: var(--color-primary-accent-text);
+}
+.button-primary:hover {
+  background: var(--color-primary-accent-hover);
+}

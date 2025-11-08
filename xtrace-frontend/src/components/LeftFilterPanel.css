@@ -1,0 +1,184 @@
+/* Styles for the Filter Panel */
+.filter-panel-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem; /* Space between sections */
+}
+
+.filter-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem; /* Space between items in a section */
+}
+
+.filter-section h4 {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #999;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.form-group label {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+/* Basic styling for inputs and selects */
+.input,
+.select {
+  width: 100%;
+  padding: 0.5rem;
+  background: #333;
+  border: 1px solid #555;
+  border-radius: 4px;
+  color: #eee;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.9rem;
+  box-sizing: border-box; /* Important for width: 100% */
+}
+
+.select {
+  /* Remove default arrow */
+  appearance: none;
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2220%22%20height%3D%2220%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M5%208l5%205%205-5z%22%20fill%3D%22%23999%22%2F%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+  background-position: right 0.5rem center;
+  background-size: 1em;
+}
+
+/* Button group for presets */
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 0.75rem;
+  width: 100%;
+}
+
+.button-group button {
+  flex: 1;
+  min-width: 0;
+  padding: 0.35rem 0;      
+  font-size: 0.75rem;    
+  font-family: 'Open Sans', sans-serif;
+  background: #3a3a3a;
+  border: 1px solid #666;
+  border-radius: 4px;
+  color: #e5e5e5;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.15s ease, transform 0.1s ease, border-color 0.15s ease;
+}
+
+.button-group button:hover {
+  background: #555;
+  border-color: #888;
+}
+
+.button-group button:active {
+  background: #666;
+  transform: translateY(1px);
+}
+
+.button-group button:focus {
+  outline: none;
+  border-color: #a0a0a0;
+}
+
+/* --- Add styles for the new action buttons --- */
+
+.filter-actions {
+  display: flex;
+  gap: 0.5rem;
+  border-bottom: 1px solid var(--color-border-1);
+  padding-bottom: 1rem;
+}
+
+.filter-actions button {
+  flex: 1;
+  padding: 0.6rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: var(--border-radius-base);
+  cursor: pointer;
+  border: none;
+}
+
+.button-primary {
+  background: var(--color-primary-accent);
+  color: var(--color-primary-accent-text);
+}
+.button-primary:hover {
+  background: var(--color-primary-accent-hover);
+}
+
+.button-secondary {
+  background: var(--color-surface-2);
+  color: var(--color-text-secondary);
+  border: 1px solid var(--color-border-2);
+}
+.button-secondary:hover {
+  background: var(--color-border-2);
+}
+
+
+
+.form-group-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.form-group-row label {
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+  cursor: pointer;
+}
+.form-group-row input[type="checkbox"] {
+  cursor: pointer;
+}
+
+.valuation-table {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.valuation-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 0.6fr auto;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.valuation-header span {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  font-weight: 600;
+}
+
+/* Make number inputs less wide */
+.valuation-row input[type="number"] {
+  min-width: 60px;
+}
+
+.button-remove {
+  background: none;
+  border: none;
+  color: var(--color-text-muted);
+  font-size: 1.5rem;
+  line-height: 1;
+  padding: 0 0.5rem;
+  cursor: pointer;
+  border-radius: var(--border-radius-base);
+}
+.button-remove:hover {
+  background: var(--color-surface-2);
+  color: var(--color-error);
+}

@@ -1,0 +1,70 @@
+{
+  "request": {
+    "centralAccount": "rCentralWallet...12345",
+    "network": "mainnet",
+    "timeRangeFetched": {
+      "start": "2025-10-01T00:00:00Z",
+      "end": "2025-11-07T13:25:00Z"
+    }
+  },
+  "nodes": [
+    {
+      "id": "rCentralWallet...12345",
+      "isCentral": true,
+      "displayName": "rCentr...12345",
+      "activationDate": "2024-03-10T12:00:00Z",
+      "tags": []
+    },
+    {
+      "id": "rBinance...CEX...67890",
+      "isCentral": false,
+      "displayName": "rBinan...67890",
+      "activationDate": "2019-01-01T00:00:00Z",
+      "tags": ["CEX", "KNOWN_EXCHANGE", "BINANCE"]
+    },
+    {
+      "id": "rBitstamp...USD...ABC",
+      "isCentral": false,
+      "displayName": "rBitst...ABC",
+      "activationDate": "2018-06-15T00:00:00Z",
+      "tags": ["GATEWAY", "KNOWN_ISSUER", "BITSTAMP"]
+    }
+  ],
+  "transactions": [
+    {
+      "hash": "C9A...B114E",
+      "source": "rCentralWallet...12345",
+      "target": "rBitstamp...USD...ABC",
+      "type": "TRUSTSET",
+      "timestamp": "2025-10-05T10:00:00Z",
+      "amount": {
+        "value": "10000",
+        "currency": "USD",
+        "issuer": "rBitstamp...USD...ABC"
+      }
+    },
+    {
+      "hash": "D4F...1A55F",
+      "source": "rBitstamp...USD...ABC",
+      "target": "rCentralWallet...12345",
+      "type": "PAYMENT_IOU",
+      "timestamp": "2025-10-05T10:05:00Z",
+      "amount": {
+        "value": "5000.00",
+        "currency": "USD",
+        "issuer": "rBitstamp...USD...ABC"
+      }
+    },
+    {
+      "hash": "A3C...21F41",
+      "source": "rCentralWallet...12345",
+      "target": "rBinance...CEX...67890",
+      "type": "PAYMENT_XRP",
+      "timestamp": "2025-10-10T14:30:00Z",
+      "amount": {
+        "value": "10000.00",
+        "currency": "XRP"
+      }
+    }
+  ]
+}

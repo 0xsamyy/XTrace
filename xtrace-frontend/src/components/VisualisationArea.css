@@ -1,0 +1,16 @@
+.graph-area-wrapper {
+  flex: 1;
+  position: relative;
+  min-height: 0;
+  background: #1a1a1a;
+}
+
+.bottom-panel-placeholder {
+  flex-shrink: 0;
+  height: 120px;
+  border-top: 1px solid var(--color-border-1);
+  background: var(--color-surface-1);
+  padding: 1rem;
+  box-sizing: border-box;
+  color: var(--color-text-muted);
+}

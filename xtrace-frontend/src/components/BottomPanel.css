@@ -1,0 +1,46 @@
+.timeline-panel {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.timeline-svg {
+  width: 100%;
+  height: 100%;
+  overflow: visible; /* Allow brush handles to overflow */
+}
+
+/* --- D3 Axis Styles --- */
+.timeline-axis .domain {
+  /* Hide the main axis line */
+  stroke: none;
+}
+.timeline-axis .tick line {
+  /* Style the tick marks */
+  stroke: var(--color-border-2);
+}
+.timeline-axis .tick text {
+  /* Style the date labels */
+  fill: var(--color-text-muted);
+  font-size: 10px;
+}
+
+/* --- D3 Brush Styles --- */
+.timeline-brush .selection {
+  /* This is the highlighted "Selected Window" */
+  fill: var(--color-primary-accent);
+  fill-opacity: 0.3;
+  stroke: var(--color-primary-accent);
+}
+
+.timeline-brush .handle {
+  /* This styles the resize handles (start/end bars) */
+  fill: var(--color-text-secondary);
+  fill-opacity: 0.8;
+  width: 3px;
+}
+
+.timeline-brush .overlay {
+  /* This is the invisible area you click to pan */
+  cursor: move;
+}

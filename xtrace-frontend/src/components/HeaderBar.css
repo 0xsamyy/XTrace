@@ -1,0 +1,73 @@
+.header-bar {
+  /* The parent .header-bar styles are in App.css */
+  /* This wrapper will hold our breadcrumbs */
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.breadcrumb-nav {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 0.8rem;
+  background: var(--color-surface-2);
+  border-radius: var(--border-radius-base);
+  border: 1px solid var(--color-border-1);
+}
+
+.breadcrumb-button,
+.breadcrumb-link {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  color: var(--color-text-secondary);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.breadcrumb-button:hover,
+.breadcrumb-link:hover {
+  color: var(--color-text-primary);
+}
+
+.breadcrumb-link {
+  color: var(--color-primary-accent);
+}
+
+.breadcrumb-separator {
+  color: var(--color-text-muted);
+  font-weight: 600;
+  user-select: none;
+}
+
+/* NEW: Styles for Health Badge */
+.health-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-left: auto; /* Pushes it to the far right */
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  padding: 0.3rem 0.6rem;
+  border-radius: 12px;
+  background: var(--color-surface-2);
+}
+
+.health-badge-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--color-text-muted); /* Default: pending */
+}
+
+.health-badge-dot.online {
+  background: var(--color-success);
+}
+
+.health-badge-dot.offline {
+  background: var(--color-error);
+}

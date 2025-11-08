@@ -1,0 +1,122 @@
+/* This is our top filter panel */
+.top-filter-panel {
+  padding: 0.75rem 1rem; /* Add padding back */
+  border-bottom: 1px solid var(--color-border-1);
+  background: var(--color-surface-1);
+  flex-shrink: 0; /* Don't shrink */
+}
+
+/* This wrapper handles the horizontal layout */
+.filter-groups-wrapper {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.chip-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center; 
+}
+
+.chip-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  margin-right: 0.5rem;
+}
+
+/* --- Chip Styles (unchanged) --- */
+.chip {
+  padding: 0.4rem 0.8rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  background: var(--color-surface-2);
+  border: 1px solid var(--color-border-2);
+  border-radius: 16px;
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  transition: all 0.1s ease-out;
+}
+.chip:hover { background: var(--color-border-2); }
+.chip.active {
+  background: var(--color-primary-accent);
+  border-color: var(--color-primary-accent);
+  color: var(--color-primary-accent-text);
+}
+
+/* --- Toggle Styles (unchanged) --- */
+.toggle-group {
+  display: flex;
+  background: var(--color-surface-2);
+  border: 1px solid var(--color-border-2);
+  border-radius: var(--border-radius-base);
+  overflow: hidden;
+}
+.toggle-button {
+  padding: 0.4rem 0.8rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  background: transparent;
+  border: none;
+  border-right: 1px solid var(--color-border-2);
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  transition: all 0.1s ease-out;
+}
+.toggle-group .toggle-button:last-child {
+  border-right: none;
+}
+.toggle-button:hover {
+  background: var(--color-border-2);
+}
+.toggle-button.active {
+  background: var(--color-primary-accent);
+  color: var(--color-primary-accent-text);
+}
+
+/* --- STYLES FOR DUST CHECKBOX --- */
+.toggle-chip {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  
+  /* Copy .chip styles */
+  padding: 0.4rem 0.8rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  background: var(--color-surface-2);
+  border: 1px solid var(--color-border-2);
+  border-radius: 16px;
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  transition: all 0.1s ease-out;
+  user-select: none;
+}
+
+.toggle-chip:hover {
+  background: var(--color-border-2);
+}
+
+/* Style it when 'active' class is present */
+.toggle-chip.active {
+  background: var(--color-primary-accent);
+  border-color: var(--color-primary-accent);
+  color: var(--color-primary-accent-text);
+}
+
+/* Inherit styles for the label */
+.toggle-chip label {
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+/* Hide the actual checkbox, it's now controlled by the div */
+.toggle-chip input[type="checkbox"] {
+  display: none;
+}
