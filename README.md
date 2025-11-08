@@ -1,4 +1,4 @@
-# 🧭 XTrace: XRPL Compliance & Visualization Suite
+# XTrace: XRPL Compliance & Visualization Suite
 
 **XTrace** is a three-part tool suite designed for **commercial banks and financial institutions** issuing **tokenized assets** on the **XRP Ledger (XRPL)**.
 
@@ -6,15 +6,15 @@ Its mission is to deliver powerful, intuitive tools for **AML (Anti-Money Launde
 
 With **XTrace**, compliance officers can:
 
-* 🕵️‍♂️ **Visually trace** the flow of funds in real time
-* 📊 **Monitor and review** any customer’s account, balances, and trust lines
-* ⚖️ **Act decisively** to freeze or claw back funds in response to fraud, theft, or regulatory action
+* **Visually trace** the flow of funds in real time
+* **Monitor and review** any customer’s account, balances, and trust lines
+* **Act decisively** to freeze or claw back funds in response to fraud, theft, or regulatory action
 
 Together, these capabilities provide a complete workflow — from **investigation** to **intervention** — helping institutions meet regulatory requirements and protect on-chain assets.
 
 ---
 
-## 🏛️ End-to-End Workflow: From Investigation to Action
+## End-to-End Workflow: From Investigation to Action
 
 The **XTrace Suite** consists of two user-facing applications powered by a shared backend data engine:
 
@@ -52,7 +52,7 @@ This seamless hand-off from **Investigation (`xtrace-frontend`)** to **Action (`
 
 ---
 
-## ⚙️ System Architecture
+## System Architecture
 
 ```
             ┌─────────────────────────────┐
@@ -70,7 +70,7 @@ This seamless hand-off from **Investigation (`xtrace-frontend`)** to **Action (`
 
 ---
 
-## 🚀 Running the Full Suite Locally
+## Running the Full Suite Locally
 
 Each service runs in its own terminal.
 **Prerequisites:**
@@ -78,7 +78,7 @@ Each service runs in its own terminal.
 * [Node.js ≥ 18](https://nodejs.org/)
 * `npm`
 
-### 1️⃣ Start the Backend Engine (Port 8080)
+### Start the Backend Engine (Port 8080)
 
 ```bash
 cd xtrace-backend
@@ -87,11 +87,11 @@ npm install
 npm run dev
 ```
 
-> ✅ Backend running at **[http://localhost:8080](http://localhost:8080)**
+> Backend running at **[http://localhost:8080](http://localhost:8080)**
 
 ---
 
-### 2️⃣ Start the Visualizer Frontend (Port 5173)
+### Start the Visualizer Frontend (Port 5173)
 
 ```bash
 cd xtrace-frontend
@@ -99,11 +99,11 @@ npm install
 npm run dev
 ```
 
-> ✅ Visualizer running at **[http://localhost:5173](http://localhost:5173)**
+> Visualizer running at **[http://localhost:5173](http://localhost:5173)**
 
 ---
 
-### 3️⃣ Start the Compliance Dashboard (Port 3000)
+### Start the Compliance Dashboard (Port 3000)
 
 ```bash
 cd xtrace-dashboard
@@ -126,11 +126,11 @@ npm run demo:flow       # Generate test fund transfers
 npm run dev             # Start dashboard
 ```
 
-> ✅ Dashboard running at **[http://localhost:3000](http://localhost:3000)**
+> Dashboard running at **[http://localhost:3000](http://localhost:3000)**
 
 ---
 
-## 🧩 Project Structure
+## Project Structure
 
 This repository contains **three independent but integrated projects**:
 
@@ -142,7 +142,7 @@ This repository contains **three independent but integrated projects**:
 
 ---
 
-## 🧠 Key Features at a Glance
+## Key Features at a Glance
 
 | Feature                       | Visualizer | Dashboard |
 | ----------------------------- | ---------- | --------- |
@@ -156,7 +156,7 @@ This repository contains **three independent but integrated projects**:
 
 ---
 
-## 🏆 Summary
+## Summary
 
 **XTrace** equips financial institutions on XRPL with a **complete compliance workflow**:
 
@@ -166,7 +166,7 @@ This repository contains **three independent but integrated projects**:
 
 Whether you’re a **bank issuing tokenized deposits**, a **compliance analyst**, or a **blockchain researcher**, XTrace provides a unified, transparent, and actionable view of value flow across the XRP Ledger.
 
-## 👷 Built By
+## Built By
 
 **XTrace Team** — "Above Code".  
 Made with ❤️ for compliance, transparency, and safer digital assets.
