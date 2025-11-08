@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+body {
+  @apply bg-black text-gray-100 font-sans;
+}
+
+/* shared button hover animation */
+.btn {
+  @apply transition-all duration-150 ease-in-out;
+}
+.btn:hover {
+  @apply scale-[1.03];
+}

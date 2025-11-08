@@ -1,0 +1,100 @@
+{
+  "issuer": {
+    "seed": "sEdTb3oxYzof3f8dkEATBxRdkmT2yJW",
+    "address": "rMiyrog6RoEFmwAkee6aSuncgwex1T4WSP"
+  },
+  "users": [
+    {
+      "name": "first_receiver",
+      "seed": "sEdVrcsuhBQzMhGidwQHmAh4fwe5DcM",
+      "address": "ravFmnc66UgAzMU414hhHzDa3PZ7uDToUK",
+      "groups": [
+        1
+      ]
+    },
+    {
+      "name": "g1_1",
+      "seed": "sEdT62LVZWkurihfaVdF39jhgXSLo26",
+      "address": "rExkJB7WChCxnnVnN7aYuVTfQwGMk5nGLu",
+      "groups": [
+        1
+      ]
+    },
+    {
+      "name": "link12",
+      "seed": "sEd77u5di5ZNP8YKkpMnBzMpbcKDjPH",
+      "address": "rNumg9R33mXy122x5vJ9DpzfRGK3NbqpTB",
+      "groups": [
+        1,
+        2
+      ]
+    },
+    {
+      "name": "g2_1",
+      "seed": "sEd74iN3YdRqYWLAqmqioNMhn4G1osQ",
+      "address": "rPXqEknDKCU3ThtsEtt2XDn6pJWrpLjkpg",
+      "groups": [
+        2
+      ]
+    },
+    {
+      "name": "g2_2",
+      "seed": "sEd7o4gmapM8tiLyGRBwCCscHfuziYj",
+      "address": "rU5zyYGtCcJAipeXrrMKz6XzYMMCiXd65T",
+      "groups": [
+        2
+      ]
+    },
+    {
+      "name": "g2_3",
+      "seed": "sEdTAL61yyVLfFHUNyrgB3KhjSKQqYn",
+      "address": "rhLQ2498oTr1H3v4B33FqEP2W9DZogAoff",
+      "groups": [
+        2
+      ]
+    },
+    {
+      "name": "link23",
+      "seed": "sEdTD6NLd25a1ponnU651L7aq5GsZmr",
+      "address": "rLCXpSAhzeKi93bcr1SosCRKGhAQL8j5ck",
+      "groups": [
+        2,
+        3
+      ]
+    },
+    {
+      "name": "g3_1",
+      "seed": "sEdSTfBYM9hA88pTDuht5CmSMRsyv2Y",
+      "address": "rZm1V6R4vq2VbjVKXuHPQwPAB5JMJsM5p",
+      "groups": [
+        3
+      ]
+    },
+    {
+      "name": "g3_2",
+      "seed": "sEdStbtiF8PoR93fdjJPoz6Lv6rQCe7",
+      "address": "rLcUHtEnBmqn2ai53YzUKmv5Sa4JFPpjgS",
+      "groups": [
+        3
+      ]
+    },
+    {
+      "name": "g3_3",
+      "seed": "sEd7YPxXFvFViR6RLhZ5FQwgurC4pZL",
+      "address": "r46wpjt1Cai1irNqoNLnYgVJGWaHXmWSW",
+      "groups": [
+        3
+      ]
+    },
+    {
+      "name": "g3_4",
+      "seed": "sEdSjfEyMk492oCg8mh3f15qnd9npCs",
+      "address": "rHyM7GX1PEjhoHtS3aM2ssdpx6TuPzBN2L",
+      "groups": [
+        3
+      ]
+    }
+  ],
+  "currency": "USD",
+  "flowDone": true
+}

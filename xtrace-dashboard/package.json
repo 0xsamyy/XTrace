@@ -1,0 +1,38 @@
+{
+  "name": "xrpl-bank-demo",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "demo:setup": "tsx src/scripts/setup.ts",
+    "demo:setup:fresh": "tsx src/scripts/setup.ts --fresh",
+    "demo:flow": "tsx src/scripts/flow.ts",
+    "demo:flow:again": "tsx src/scripts/flow.ts --force",
+    "demo:once": "npm run demo:setup && npm run demo:flow",
+    "demo:reset": "rm -f demo-state/state.json && npm run demo:once",
+    "demo:show-state": "cat demo-state/state.json || echo 'no state file yet'"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "next": "16.0.1",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "swr": "^2.3.6",
+    "xrpl": "^4.4.3",
+    "zod": "^4.1.12"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.0.1",
+    "tailwindcss": "^4",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.20.6",
+    "typescript": "^5"
+  }
+}
